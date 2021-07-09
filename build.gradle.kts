@@ -21,8 +21,8 @@ kotlin {
         browser {
             useCommonJs()
             webpackTask {
-                output.libraryTarget = "commonjs2"
-                output.library = "default"
+                output.libraryTarget = "commonjs"
+                output.library = null
                 outputFileName = "main.js"
 
             }
