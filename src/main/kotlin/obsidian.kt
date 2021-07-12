@@ -6,8 +6,10 @@ open external class Component {
     open fun onunload()
 }
 
-open external class Plugin : Component {
-}
+open external class Plugin(
+    app: Any,
+    manifest: Any
+) : Component
 
 open external class Notice(message: String, timeout: Number = definedExternally) {
     open fun hide()
